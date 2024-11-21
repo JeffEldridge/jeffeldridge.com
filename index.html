@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeff Eldridge - Web UX/UI Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+<section>
+  <section>
+    <div>
+      <h1>Jeff Eldridge</h1>
+      <h2>Web UX/UI Engineer</h2>
+      <p>Dublin, Ireland</p>
+    </div>
+  </section>
+  <section id="profile">
+    <img alt="Profile picture" src="./img/profile.webp"/>
+  </section>
+</section>
+<section id="images">
+  <img src="./img/react-2.svg" alt="React"/>
+  <img src="./img/typescript.svg" alt="Typescript"/>
+  <img src="./img/nodejs-2.svg" alt="NodeJS"/>
+  <img src="./img/figma-icon.svg" alt="Figma"/>
+</section>
+<section>
+  <a id="contact-me" href="mailto:jeff.eldridge.uxui@gmail.com">Contact me</a>
+</section>
+
+<script>
+  document.getElementsByTagName('body')[0].classList.add('visible');
+  document.getElementById('profile').classList.add('noblur');
+  document.getElementById('images').classList.add('colorful');
+  setInterval(() => document.getElementById('images').classList.toggle('colorful'), 10000);
+  setTimeout(() => setInterval(() => document.getElementById('contact-me').classList.remove('shake'), 5000), 6000);
+  setInterval(() => document.getElementById('contact-me').classList.add('shake'), 5000);
+</script>
+
+</body>
+
+</html>
