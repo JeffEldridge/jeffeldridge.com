@@ -21,10 +21,10 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
-  <link rel="preload" href="https://fonts.googleapis.com">
-  <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+JP:wght@200..900&display=swap"
-        rel="stylesheet">
+<!--  <link rel="preload" href="https://fonts.googleapis.com">-->
+<!--  <link rel="preload" href="https://fonts.gstatic.com" crossorigin>-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+JP:wght@200..900&display=swap"-->
+<!--        rel="stylesheet">-->
 </head>
 <body>
 <section>
@@ -50,12 +50,14 @@
 </section>
 
 <script>
-  document.getElementsByTagName('body')[0].classList.add('visible');
-  document.getElementById('profile').classList.add('noblur');
-  document.getElementById('images').classList.add('colorful');
-  setInterval(() => document.getElementById('images').classList.toggle('colorful'), 10000);
-  setTimeout(() => setInterval(() => document.getElementById('contact-me').classList.remove('shake'), 5000), 6000);
-  setInterval(() => document.getElementById('contact-me').classList.add('shake'), 5000);
+  window.addEventListener("load", () => {
+    document.getElementsByTagName('body')[0].classList.add('visible');
+    document.getElementById('profile').classList.add('noblur');
+    document.getElementById('images').classList.add('colorful');
+    setInterval(() => document.getElementById('images').classList.toggle('colorful'), 10000);
+    setTimeout(() => setInterval(() => document.getElementById('contact-me').classList.remove('shake'), 5000), 6000);
+    setInterval(() => document.getElementById('contact-me').classList.add('shake'), 5000);
+  })
 </script>
 
 </body>
