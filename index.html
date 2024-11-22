@@ -50,12 +50,14 @@
 </section>
 
 <script>
-  document.getElementsByTagName('body')[0].classList.add('visible');
-  document.getElementById('profile').classList.add('noblur');
-  document.getElementById('images').classList.add('colorful');
-  setInterval(() => document.getElementById('images').classList.toggle('colorful'), 10000);
-  setTimeout(() => setInterval(() => document.getElementById('contact-me').classList.remove('shake'), 5000), 6000);
-  setInterval(() => document.getElementById('contact-me').classList.add('shake'), 5000);
+  window.addEventListener("load", () => {
+    document.getElementsByTagName('body')[0].classList.add('visible');
+    document.getElementById('profile').classList.add('noblur');
+    document.getElementById('images').classList.add('colorful');
+    setInterval(() => document.getElementById('images').classList.toggle('colorful'), 10000);
+    setTimeout(() => setInterval(() => document.getElementById('contact-me').classList.remove('shake'), 5000), 6000);
+    setInterval(() => document.getElementById('contact-me').classList.add('shake'), 5000);
+  })
 </script>
 
 </body>
