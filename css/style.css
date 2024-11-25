@@ -277,7 +277,7 @@ body > section:nth-child(3) > a {
 
 @media only screen and (min-width: 375px) {
   body > section {
-    margin-top: 64px;
+    margin-top: 614px;
   }
 }
 @media only screen and (min-height: 719px) {
