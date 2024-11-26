@@ -108,7 +108,7 @@ b {
   width: 100%;
   flex-wrap: nowrap;
   margin: 0 auto 0 auto;
-  height: calc(100vh - var(--cta-button-height) - 12px);
+  height: 100svh;
 
   @media screen and (min-width: 960px) {
     max-width: 960px;
