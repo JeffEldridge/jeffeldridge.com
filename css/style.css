@@ -32,6 +32,8 @@ hr {
 
   --sans-serif: 'Lato', sans-serif;
   --serif: serif;
+
+  --cta-button-height: 48px;
 }
 
 .colorful {
@@ -106,7 +108,7 @@ b {
   width: 100%;
   flex-wrap: nowrap;
   margin: 0 auto 0 auto;
-  height: 100vh;
+  height: calc(100vh - var(--cta-button-height) - 12px);
 
   @media screen and (min-width: 960px) {
     max-width: 960px;
@@ -234,7 +236,7 @@ b {
 
   a {
     width: 140px;
-    height: 48px;
+    height: var(--cta-button-height);
     text-decoration: none;
 
     font-family: var(--sans-serif);
