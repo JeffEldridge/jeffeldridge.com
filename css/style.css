@@ -88,8 +88,12 @@ textarea {
 :root {
   --primary: #17338a;
   --secondary: #17548a;
-  --heading: rgba(0, 0, 0, 0.86);
-  --text: rgba(0, 0, 0, 0.54);
+  --heading: #09090b;
+  --text: #27272a;
+  --background-color: #f8fafc;
+
+  --sans-serif: 'Lato', sans-serif;
+  --serif: serif;
 }
 
 .colorful {
@@ -119,18 +123,20 @@ textarea {
 }
 
 body {
-  font-family: serif;
-  font-weight: 400;
+  font-family: var(--serif);
+  font-weight: 300;
   font-style: normal;
   min-width: 360px;
   color: var(--text);
   animation: visible;
   animation-duration: 1.0s;
   animation-timing-function: ease-in;
+
+  background-color: var(--background-color);
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: sans-serif;
+  font-family: var(--sans-serif);
   font-weight: 400;
   font-style: normal;
   color: var(--heading);
@@ -138,6 +144,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 62px;
+  font-weight: 300;
 }
 
 h2 {
@@ -146,6 +153,10 @@ h2 {
 
 h3 {
   font-size: 14px;
+}
+
+b {
+  font-weight: 700;
 }
 
 section {
@@ -162,16 +173,16 @@ section {
 
   h1 {
     margin: 0;
-    letter-spacing: -1.25px;
+    letter-spacing: -1px;
   }
 
   h2 {
-    font-family: serif;
-    letter-spacing: -1.25px;
+    font-family: var(--serif);
+    letter-spacing: 1.4px;
   }
 
   p {
-    letter-spacing: 1.1px;
+    letter-spacing: 2px;
   }
 
   section {
@@ -234,7 +245,7 @@ body > section:nth-child(3) > a {
   height: 48px;
   text-decoration: none;
 
-  font-family: sans-serif;
+  font-family: var(--sans-serif);
   font-size: 1em;
   letter-spacing: 0.9px;
 
