@@ -110,7 +110,7 @@ b {
 #container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   flex-wrap: nowrap;
   margin: 0 auto 0 auto;
@@ -118,13 +118,11 @@ b {
 
   @media screen and (min-width: 960px) {
     max-width: 960px;
-
+    max-height: 768px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    max-height: 768px;
-
   }
 
 }
