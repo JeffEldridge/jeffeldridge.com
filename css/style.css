@@ -115,10 +115,14 @@ b {
   flex-wrap: nowrap;
   margin: 0 auto 0 auto;
   height: 100svh;
+  min-height: 405px;
+
+  @media screen and (min-width: 768px) {
+    max-height: 768px;
+  }
 
   @media screen and (min-width: 960px) {
     max-width: 960px;
-    max-height: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -171,7 +175,6 @@ b {
 }
 
 #profile {
-
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -201,7 +204,7 @@ b {
   }
 
   flex-direction: row;
-  margin: 32px auto 0 auto;
+  margin: 0 auto 0 auto;
   flex-wrap: wrap;
 
   height: 64px;
@@ -218,20 +221,6 @@ b {
 
   width: 100%;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 48px;
-  }
-
-  @media screen and (min-width: 960px) {
-    margin-top: 64px;
-    margin-bottom: 92px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 128px;
-  }
-
-
   img {
     width: 64px;
     height: 64px;
@@ -247,14 +236,6 @@ b {
   align-items: center;
 
   margin-bottom: 12px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
-  }
-
-  @media screen and (min-width: 960px) {
-    margin-bottom: 32px;
-  }
 
   p {
     font-size: 22px;
@@ -293,8 +274,14 @@ b {
   }
 
   #available {
+    display: none;
     animation: pulse 4s infinite ease-in-out;
     animation-delay: 1s;
+
+    @media screen and (min-height:478px) {
+      display: block;
+    }
+
   }
 
 }
