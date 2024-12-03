@@ -117,12 +117,9 @@ b {
   height: 100svh;
   min-height: 405px;
 
-  @media screen and (min-width: 768px) {
-    max-height: 768px;
-  }
-
   @media screen and (min-width: 960px) {
     max-width: 960px;
+    max-height: 960px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -241,6 +238,8 @@ b {
     font-size: 22px;
     font-family: monospace;
     font-weight: bolder;
+    margin: 0;
+    line-height: 64px;
   }
 
   a {
@@ -278,7 +277,7 @@ b {
     animation: pulse 4s infinite ease-in-out;
     animation-delay: 1s;
 
-    @media screen and (min-height:478px) {
+    @media screen and (min-height:632px) {
       display: block;
     }
 
