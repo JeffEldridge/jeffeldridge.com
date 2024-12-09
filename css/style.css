@@ -41,8 +41,8 @@ hr {
 }
 
 @keyframes visible {
-  0% { opacity: 0}
-  100% {opacity: 1}
+  0% { opacity: 0; scale: 0.8;}
+  100% {opacity: 1; scale: 1;}
 }
 
 @keyframes horizontal-shaking {
@@ -76,7 +76,7 @@ body {
   color: var(--text);
   animation: visible;
   animation-duration: 1.0s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
 
   background-color: var(--background-color);
 
@@ -172,12 +172,16 @@ b {
 }
 
 #profile {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: space-around;
 
   @media screen and (min-width: 678px) {
     width: 50%;
+  }
+
+  @media screen and (min-height: 632px) {
+    display: flex;
   }
 
 
@@ -277,7 +281,7 @@ b {
     animation: pulse 4s infinite ease-in-out;
     animation-delay: 1s;
 
-    @media screen and (min-height:632px) {
+    @media screen and (min-height: 425px) {
       display: block;
     }
 
