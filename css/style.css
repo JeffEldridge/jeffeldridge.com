@@ -41,8 +41,8 @@ hr {
 }
 
 @keyframes visible {
-  0% { opacity: 0}
-  100% {opacity: 1}
+  0% { opacity: 0; scale: 0.8;}
+  100% {opacity: 1; scale: 1;}
 }
 
 @keyframes horizontal-shaking {
@@ -76,7 +76,7 @@ body {
   color: var(--text);
   animation: visible;
   animation-duration: 1.0s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
 
   background-color: var(--background-color);
 
@@ -91,16 +91,16 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 3.875em;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 h3 {
-  font-size: 14px;
+  font-size:1em;
 }
 
 b {
@@ -145,6 +145,7 @@ b {
   }
 
   p {
+    font-size: 1em;
     letter-spacing: 2px;
   }
 
@@ -172,12 +173,16 @@ b {
 }
 
 #profile {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: space-around;
 
   @media screen and (min-width: 678px) {
     width: 50%;
+  }
+
+  @media screen and (min-height: 632px) {
+    display: flex;
   }
 
 
@@ -235,7 +240,7 @@ b {
   margin-bottom: 12px;
 
   p {
-    font-size: 22px;
+    font-size: 1.375em;
     font-family: monospace;
     font-weight: bolder;
     margin: 0;
@@ -252,7 +257,7 @@ b {
     font-weight: 600;
     letter-spacing: 0.9px;
 
-    border: 1px solid var(--primary);
+    border: 3px solid var(--primary);
     border-radius: 32px;
     text-align: center;
     line-height: 48px;
@@ -277,7 +282,7 @@ b {
     animation: pulse 4s infinite ease-in-out;
     animation-delay: 1s;
 
-    @media screen and (min-height:632px) {
+    @media screen and (min-height: 425px) {
       display: block;
     }
 
