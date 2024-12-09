@@ -91,16 +91,16 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 3.875em;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 h3 {
-  font-size: 14px;
+  font-size:1em;
 }
 
 b {
@@ -145,6 +145,7 @@ b {
   }
 
   p {
+    font-size: 1em;
     letter-spacing: 2px;
   }
 
@@ -239,7 +240,7 @@ b {
   margin-bottom: 12px;
 
   p {
-    font-size: 22px;
+    font-size: 1.375em;
     font-family: monospace;
     font-weight: bolder;
     margin: 0;
@@ -256,7 +257,7 @@ b {
     font-weight: 600;
     letter-spacing: 0.9px;
 
-    border: 1px solid var(--primary);
+    border: 3px solid var(--primary);
     border-radius: 32px;
     text-align: center;
     line-height: 48px;
