@@ -1,3 +1,18 @@
+:root {
+  --primary: #17338a;
+  --secondary: #17548a;
+  --heading: #09090b;
+  --text: #27272a;
+  --background-color: #f8fafc;
+
+  --selection-color: #b3d4fc;
+
+  --sans-serif: 'Lato', sans-serif;
+  --serif: serif;
+
+  --cta-button-height: 48px;
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -5,12 +20,12 @@ html {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: var(--selection-color);
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: var(--selection-color);
   text-shadow: none;
 }
 
@@ -21,19 +36,6 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-}
-
-:root {
-  --primary: #17338a;
-  --secondary: #17548a;
-  --heading: #09090b;
-  --text: #27272a;
-  --background-color: #f8fafc;
-
-  --sans-serif: 'Lato', sans-serif;
-  --serif: serif;
-
-  --cta-button-height: 48px;
 }
 
 .colorful {
