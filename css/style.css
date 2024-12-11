@@ -1,7 +1,7 @@
 :root {
   --primary: #17338a;
   --secondary: #17548a;
-  --heading: #09090b;
+  --heading: #222;
   --text: #27272a;
   --background-color: #f8fafc;
 
@@ -14,7 +14,7 @@
 }
 
 html {
-  color: #222;
+  color: var(--text);
   font-size: 1em;
   line-height: 1.4;
 }
@@ -144,11 +144,15 @@ b {
   h2 {
     font-family: var(--serif);
     letter-spacing: 1.4px;
+    line-height: 2.5em;
+    margin: 0;
   }
 
   p {
     font-size: 1em;
     letter-spacing: 2px;
+    line-height: 2.5em;
+    margin: 0;
   }
 
   @media screen and (min-width: 768px) {
